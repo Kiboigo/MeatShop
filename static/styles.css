@@ -1,5 +1,5 @@
 .image-container {
-    position: relative;
+    
     width: 100%;
     overflow: hidden;
    
@@ -18,7 +18,7 @@ body .image {
     padding-top: 20px;
 }
 .img-text{
-    position: absolute;
+   
     top: 40%;
     left: 30%;
     right: 30%;

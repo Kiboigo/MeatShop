@@ -2,7 +2,7 @@ import psycopg2
 # psycopg2 is a popular Python adapter for PostgreSQL that allows you to interact with PostgreSQL databases using Python code
 
 try:
-    conn = psycopg2.connect("dbname= esipil user=postgres password=1234")
+    conn = psycopg2.connect("dbname= meat user=postgres password=39457485")
     cur =conn.cursor()
 except Exception as e:
     print(e)
@@ -16,9 +16,9 @@ def fetch_data(tbname):
     except Exception as e:
         return e   
     
-def insert_user(v):
+def add_user(v):
     vs = str(v)
-    q = "insert into users(full_name,email,user_type, user_status, password, created_at, dob) "\
+    q = "insert into users(fullname,email,phone,address,h_password, created_at) "\
         "values" + vs
     cur.execute(q)
     conn.commit()
